@@ -1,0 +1,20 @@
+{
+  "name": "theilsen-trend-backend",
+  "version": "1.0.0",
+  "description": "离线二维观测点 Theil-Sen 稳健直线趋势与残差定位后端（API + CLI）",
+  "type": "module",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "tsc && node --test dist/test",
+    "start": "node dist/server.js",
+    "cli": "node dist/cli.js",
+    "demo": "node dist/demo.js"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  }
+}
