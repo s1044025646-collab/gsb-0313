@@ -1,0 +1,18 @@
+{
+  "name": "theil-sen-backend",
+  "version": "1.0.0",
+  "description": "离线二维观测点 Theil-Sen 稳健直线趋势与残差定位后端（API + CLI）",
+  "type": "commonjs",
+  "main": "dist/cli.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/test/theilSen.test.js dist/test/validation.test.js dist/test/integration.test.js",
+    "start": "npm run build && node dist/cli.js serve",
+    "demo": "npm run build && node dist/cli.js demo",
+    "cli": "node dist/cli.js"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  }
+}
